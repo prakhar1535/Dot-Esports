@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+/* body{
+    background-color: #000;
+} */
+.navbar {
+    background-color: #131313;
+    padding: 1rem 8rem !important;
+    z-index: 10000;
+}
+body > div > div > h2{
+    font-weight: 400 !important;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.navbar .navbar-brand:hover {
+    transform: scale(1.1);
+    transition: all .40s ease;
+}
+
+#navbarSupportedContent>ul>li:nth-child(n)>a {
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0 1.2rem;
+    /* text-decoration: underline; */
+}
+
+#navbarSupportedContent>ul>li:nth-child(n)>a:hover,
+#navbarSupportedContent>ul>li:nth-child(n)>a:active {
+    color: #00BF85;
+    transition: all .40s ease;
+
+
+
+}
+
+#navbarSupportedContent>button {
+    background-color: #00BF85;
+    font-weight: 600;
+    padding: 0.4rem 1.4rem;
+    border-radius: 30px;
+}
+
+#navbarSupportedContent>button:hover {
+    color: white !important;
+    transition: all .50s ease;
+    box-shadow: #00BF85 0px 1px 25px;
+    /* transform: scale(1.1); */
+}
+
+.mid {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mid video {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: cover;
+    position: absolute;
+    /*for positioning in center*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.mid .hero {
+    position: relative;
+}
+
+.mid .hero p {
+    width: 55%;
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
+    padding-bottom: 1.1rem;
+}
+
+.mid .hero a {
+    background-color: #00BF85;
+    font-weight: 600;
+    padding: 0.7rem 1.4rem;
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgb(52, 68, 54) !important;
+}
+
+.mid .hero a:hover {
+    color: white !important;
+    transition: all .50s ease;
+    box-shadow: #00BF85 0px 1px 25px;
+    
+
+}
+.scale{
+    transform: scale(1.5);
+}
+
+.about {
+    background-color: #111314;
+    height: 100vh;
+    width: 100%;
+}
+
+.about .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.about .text h6 {
+    color: #00BF7F;
+    font-weight: 800;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+.about .text h2 {
+    color: #F7F5F4;
+    font-weight: 700;
+    font-size: 2.7rem;
+    /* letter-spacing: 2px; */
+}
+
+.about .text p {
+    color: #F7F5F4;
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.about .text a {
+    background-color: #00BF85;
+    font-weight: 600;
+    padding: 0.7rem 1.4rem;
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgb(52, 68, 54) !important;
+
+
+
+}
+
+.about .text a:hover {
+    color: white !important;
+    transition: all .50s ease;
+    box-shadow: #00BF85 0px 1px 25px;
+    transform: scale(1.1);
+
+}
+
+hr {
+    /* height: 2rem !important; */
+    border-width: 0;
+    background-color: #313231;
+    /* box-shadow: inset 0 12px 12px -12px rgba(1, 5, 0, 5); */
+}
+
+
+.discovery .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.discovery .text h6 {
+    color: #00BF7F;
+    font-weight: 800;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+.discovery .text h2 {
+    color: #111;
+    font-weight: 700;
+    font-size: 2.7rem;
+    /* letter-spacing: 2px; */
+}
+
+.discovery .text p {
+    /* color: #F7F5F4; */
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.discovery .text a {
+    background-color: #00BF85;
+    font-weight: 600;
+    padding: 0.7rem 1.4rem;
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgb(52, 68, 54) !important;
+
+
+
+}
+
+.discovery .text a:hover {
+    color: white !important;
+    transition: all .50s ease;
+    box-shadow: #00BF85 0px 1px 25px;
+    transform: scale(1.1);
+
+}
+
+.service {
+    background-color: #111314;
+}
+
+.service .one {
+    background-color: #fff;
+    border-radius: 12px;
+    transition: all .50s ease;
+    padding: 2rem 1.5rem !important;
+    margin-top: 3.4rem !important;
+    margin-bottom: 7rem !important;
+    margin-left: 2rem !important;
+}
+
+.service .one:hover {
+    background: #ffffff;
+    box-shadow: 18px 0px 87px 0px rgba(247, 247, 247, 0.922);
+    border-radius: 12px;
+    will-change: transform;
+    transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05, 1.05, 1.05) scale(1.1);
+    cursor: pointer;
+    margin-left: 1.5rem !important;
+
+}
+#ty:hover{
+    box-shadow: 18px 0px 87px 0px rgba(239, 255, 173, 0.922);
+}
+
+body>section.service.py-5>div>div.heading.text-center.pt-5>h2 {
+    font-size: 2.4rem;
+}
+
+
+
+.sign {
+
+    height: 100vh;
+    width: 100%;
+}
+
+.sign .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.sign .text h6 {
+    color: #00BF7F;
+    font-weight: 800;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+.sign .text h2 {
+    color: #111;
+    font-weight: 700;
+    font-size: 2.7rem;
+    /* letter-spacing: 2px; */
+}
+
+.sign .text p {
+    /* color: #F7F5F4; */
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.sign .text a {
+    background-color: #00BF85;
+    font-weight: 600;
+    padding: 0.7rem 1.4rem;
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgb(52, 68, 54) !important;
+
+
+
+}
+
+.sign .text a:hover {
+    color: white !important;
+    transition: all .50s ease;
+    box-shadow: #00BF85 0px 1px 25px;
+    transform: scale(1.1);
+
+}
+
+body>footer {
+    background: color #111314 !important;
+    
+}
+body > footer > div.container.p-4 > section:nth-child(1) > form > div > div:nth-child(3) > button{
+    background-color: #00BF85;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgb(52, 68, 54) !important;
+    border: none;
+    
+
+}
+body > footer > div.container.p-4 > section:nth-child(1) > form > div > div:nth-child(3) > button:hover{
+    color: white !important;
+    transform: scale(1.1);
+    transition: all .50s ease;
+
+}
+
+
+
+/* MEDIA Q */
+@media screen and (max-width:988px) {
+    .navbar{
+        padding: 1rem !important;
+    }
+
+    #navbarSupportedContent >ul{
+        padding-left: .8rem;
+    }
+    #navbarSupportedContent >ul >li:nth-child(n)>a{
+        padding: 0.8rem 0;
+    }
+    .mid .hero h2 {
+        font-size: 2.5rem;
+
+    }
+    .mid .hero p {
+        
+        font-size: 1rem;
+        
+    }
+    
+    .mid .hero a {
+        font-size: .9rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
